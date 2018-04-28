@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Chart</title>
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script src="chart-js/dist/Chart.bundle.js"></script>
+		<script src="chart-js/papaparse.min.js"></script> <!--библиотека для взятия инфы с файла csv-->
+		<link rel="stylesheet" type="text/css" href="css/common.css"> 
+		<script type="text/javascript" src="chart-js/lineChart.js"></script>
+		<script type="text/javascript" src="chart-js/circleChart.js"></script>
+		<script type="text/javascript" src="chart-js/buyNow.js"></script>
+		<script type="text/javascript" src="chart-js/transitionChartMenu.js"></script>
+		<script type="text/javascript" src="chart-js/bubbleChart.js" defer></script>		
+	</head>
+
+	<body class="global-wrapper"> 
+		<div class="chart"> 
+			<div class="chart__menu"> 
+				<span class="chart__menuSpan">My Income</span> 
+				<ul class="chart__menuMain"> 
+					<li class="chart__menuList" id="chartMenuBtn1"><a class="chart__menuLink" href='#bubbleChart' onclick="chartMenuColor('chartMenuBtn1', 'chartMenuBtn2', 'chartMenuBtn3')">day</a></li> 
+					<li class="chart__menuList chart__menuListProducts" id="chartMenuBtn2"><a class="chart__menuLink" href='#circleChart' onclick="chartMenuColor('chartMenuBtn2', 'chartMenuBtn1', 'chartMenuBtn3')">products</a></li> 
+					<li class="chart__menuList chart__menuList_bgColor" id="chartMenuBtn3"><a class="chart__menuLink chart__menuLink_whiteColor" href='#lineChart' onclick="chartMenuColor('chartMenuBtn3', 'chartMenuBtn2', 'chartMenuBtn1')">month</a></li> 
+				</ul> 
+			</div> 
+			
+			<div class="chart__content"> 
+				<div class='chart__lineChart chart__chartOption' id="lineChart">
+					<canvas id="canvasLine" class="chart__canvasLine"></canvas> 
+					<div class="chart__statistics"> 
+						<div class="chart__statisticsAlwaysBlock"> 
+							<div class="chart__infoAlwaysBlock"> 
+								<div class="chart__infoAlwaysSpan">always</div> 
+								<div class="chart__infoAlwaysPrice" id="infoAlwaysPrice">$3500</div> 
+								<div class="chart__infoAlwaysNoSale">without rebate</div> 
+							</div> 
+						</div> 
+
+						<div class="chart__statisticsTodayBlock"> 
+							<div class="chart__infoTodayBlock"> 
+								<div class="chart__infoTodaySpan">today</div> 
+								<div class="chart__infoTodayPrice" id="infoTodayPrice">$2450</div> 
+								<div class="chart__infoTodaySale">with rebate</div> 
+							</div> 
+						</div> 
+
+						<div class="chart__statisticsCharts"> 
+							<div class="chart__designationUsually"> 
+								<span class="chart__designationUsuallyIc chart__designationIcon"></span> 
+								<span class="chart__designationLabel">Usually</span> 
+							</div> 
+
+							<div class="chart__designationToday"> 
+								<span class="chart__designationTodayIc chart__designationIcon"></span> 
+								<span class="chart__designationLabel">Today</span> 
+							</div> 
+
+						</div> 
+					</div>
+				</div> 
+				<div id="circleChart" class="chart__circleChart chart__chartOption">
+					<div id="chart__circleCanvasWrapper" >
+						<canvas id="canvasCircle" class="chart__canvasCircle"></canvas>
+					</div>
+				</div>
+
+				<div class="chart__bubbleChart chart__chartOption" id="bubbleChart">
+					<div class="chart__bubbleCanvasWrapper">
+						<canvas id="canvasBubble" class="chart__canvasBubble"></canvas>
+					</div>				
+				</div>
+			</div>
+		</div>
+
+		<div id = 'testDiv'>1800</div>
+		<button class="buttonBuyNow1" onclick="onClickButtonNow('testDiv')">Buy Now1</button>
+	</body>		
+</html>

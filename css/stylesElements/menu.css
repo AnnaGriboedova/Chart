@@ -1,0 +1,79 @@
+.chart__menu {
+  font-family: "Verdana", "Helvetica", "Arial", sans-serif;
+  background: #fff;
+  letter-spacing: 1px;
+  text-align: justify;
+  width: 790px;
+  height: 110px;
+  padding: 25px 40px;
+  box-sizing: border-box;
+}
+
+.chart__menuSpan,
+.chart__menuMain {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.chart__menuSpan {
+  font-family: "GothamMedium", "Helvetica", "Arial", sans-serif;
+  font-size: 25px;
+  height: 100%;
+}
+
+.chart__menuSpan::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.chart__menuMain {
+  font-size: 0;
+  padding: 0 0;
+  margin: 0 0;
+}
+
+.chart__menu::after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+.chart__menuList_bgColor, .chart__menuList:hover {
+  background: #88E5F5;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.chart__menuLink {
+  font-family: "GothamBook", "Helvetica", "Arial", sans-serif;
+  color: black;
+  width: 95px;
+  height: 50px;
+  text-decoration: none;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.chart__menuLink_whiteColor {
+  color: #fff;
+}
+
+.chart__menuList {
+  text-transform: uppercase;
+  text-align: center;
+  width: 95px;
+  line-height: 50px;
+  height: 50px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.chart__menuLink:last-child {
+  padding-right: 0;
+}
+
+.chart__menuListProducts {
+  width: 120px;
+}

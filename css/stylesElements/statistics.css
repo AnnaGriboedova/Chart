@@ -1,0 +1,99 @@
+.chart__statistics {
+  position: absolute;
+  top: 40px;
+  right: 55px;
+  width: 170px;
+  height: 370px;
+  font-family: "Verdana", "Helvetica", "Arial", sans-serif;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.chart__statisticsAlwaysBlock, .chart__statisticsTodayBlock {
+  background-color: #fff;
+  text-align: center;
+  display: flex;
+  width: 100%;
+  height: 140px;
+  border-top: 3px solid #88E5F5;
+}
+
+.chart__statisticsTodayBlock {
+  border: 0;
+  box-shadow: inset 0 15px 20px -15px #B2DAE1 , inset 0 -15px 20px -15px #B2DAE1;
+}
+
+.chart__infoAlwaysSpan, .chart__infoTodaySpan {
+  font-family: "GothamBook", "Helvetica", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.chart__infoAlwaysPrice, .chart__infoTodayPrice {
+  font-size: 30px;
+  font-family: "GothamMedium", "Helvetica", "Arial", sans-serif;
+  color: #704248;
+}
+
+.chart__infoTodayPrice {
+  color: #1C6471;
+}
+
+.chart__infoAlwaysNoSale, .chart__infoTodaySale {
+  font-family: "GothamBook", "Helvetica", "Arial", sans-serif;
+  color: #FB6C72;
+  font-size: 12px;
+}
+
+.chart__infoAlwaysBlock, .chart__infoTodayBlock {
+  line-height: 1.5;
+  margin: auto;
+}
+
+.chart__infoTodaySale {
+  color: #88E5F5;
+}
+
+.chart__statisticsCharts {
+  position: relative;
+  background-color: #fff;
+  display: flex;
+  height: 90px;
+  width: 100%;
+}
+
+.chart__designationIcon {
+  background: url("../../images/diagrams.png") no-repeat;
+  width: 35px;
+  height: 25px;
+  float: left;
+}
+
+.chart__designationUsuallyIc {
+  background-position: 0 -5px;
+}
+
+.chart__designationTodayIc {
+  background-position: -35px -5px;
+}
+
+.chart__designationUsually, .chart__designationToday {
+  top: 25px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 30%;
+}
+
+.chart__designationUsually {
+  left: 25px;
+}
+
+.chart__designationToday {
+  right: 25px;
+}
+
+.chart__designationLabel {
+  font-size: 12px;
+}
